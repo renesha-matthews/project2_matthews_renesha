@@ -45,6 +45,10 @@ h2 {
 	font-size: 2em;
 }
 
+h3 {
+	font-size: 1.5em;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	color: #545677;
@@ -250,6 +254,23 @@ About Page Styling
     padding: 4%;
 		font-weight: bold;
 		border-radius: 34px;
+}
+
+/************************
+
+Work Page Styling
+
+*************************/
+.slider {
+	background-color: grey;
+}
+
+.slider figure img {
+	max-width: 100%;
+}
+
+.slider figcaption {
+	text-align: center;
 }
 
 /************************
