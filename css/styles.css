@@ -261,8 +261,11 @@ About Page Styling
 Work Page Styling
 
 *************************/
-.slider {
-	background-color: grey;
+.my-work h2 {
+	text-align: center;
+}
+.work-container .slider {
+	background-color: #ececec;
 }
 
 .slider figure img {
@@ -454,6 +457,18 @@ Media Queries
 
 	.button a {
     padding: 20px 40px;
+	}
+
+	.work-container {
+		display: flex;
+	}
+
+	.work-content {
+		width: 50%;
+	}
+
+	.slider {
+		width: 50%;
 	}
 
 
