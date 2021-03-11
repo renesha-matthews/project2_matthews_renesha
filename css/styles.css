@@ -264,7 +264,24 @@ Work Page Styling
 .my-work h2 {
 	text-align: center;
 }
-.work-container .slider {
+
+.travel-vida {
+	padding-top: 10%;
+}
+
+.travel-vida .work-content {
+	padding-bottom: 14%;
+}
+
+.blue {
+	text-transform: uppercase;
+}
+
+.my-work h3 {
+	padding-bottom: 5%;
+}
+
+ .slider {
 	background-color: #ececec;
 }
 
