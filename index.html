@@ -13,6 +13,7 @@
 
 		<!-- Link to CSS -->
 		<link type="text/css" rel="stylesheet" href="css/styles.css" />
+		<link type="text/css" rel="stylesheet" href="css/animsition.min.css">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,6 +37,7 @@
 	</head>
 
 	<body>
+		<div class="animsition">
 			<div id="particle-container"></div>
 				<header class="site-header">
 					<div class="wrapper site-header_wrapper">
@@ -43,6 +45,7 @@
 		  			<button class="cross">&#735;</button>
 
 						<a href="index.html"><img class="logo" src="images/logo.png" alt="Heart Logo" title="Heart Logo" width=160></a>
+
 
 						<!-- Mobile Menu -->
 						<nav class="menu">
@@ -57,10 +60,10 @@
 						<!-- Desktop Menu -->
 						<nav class="desktop-menu">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="work.html">Work</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a class="animsition-link" href="index.html">Home</a></li>
+								<li><a class="animsition-link" href="about.html">About</a><li>
+								<li><a class="animsition-link" href="work.html">Work</a></li>
+								<li><a class="animsition-link" href="contact.html">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -88,8 +91,13 @@
 
 				<footer>Site by Renesha Matthews.</footer>
 
+			<script src="js/animsition.js"></script>
+			<script src="js/animsition.min.js"></script>
 			<script src="js/hamburger.js"></script>
 			<script src="js/particles.js"></script>
+
+		</div>
+
 	</body>
 
 </html>

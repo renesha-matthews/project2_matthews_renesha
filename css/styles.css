@@ -435,7 +435,7 @@ Media Queries
 		text-align: left;
 	}
 
-	.column {
+	.row {
 		flex: 1%;
 	}
 
@@ -459,17 +459,7 @@ Media Queries
     padding: 20px 40px;
 	}
 
-	.work-container {
-		display: flex;
-	}
 
-	.work-content {
-		width: 50%;
-	}
-
-	.slider {
-		width: 50%;
-	}
 
 
 }
