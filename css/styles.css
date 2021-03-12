@@ -2,9 +2,10 @@
 Color Palette:
 Mauve - #E0C3FC
 Baby Blue - #8EC5FC
+Lavender Blue - #BCC5FB
 Light Blue/Grey - #545677
-Dark Blue/Grey - #43445A
-Rich Black FOGRA 29 - #011C27
+Dark Blue/Grey - #43445A (HEADINGS)
+Rich Black FOGRA 29 - #011C27 (PARAGRAPHS)
 
 Fonts:
 font-family: 'Noto Sans JP', sans-serif;
@@ -273,12 +274,32 @@ Work Page Styling
 	padding-bottom: 14%;
 }
 
+.travel-vida, .gainesville-logo {
+	background-image: linear-gradient(180deg, #ffffff, #ffffff #ebedee);
+}
+
+.travel-vida .work-content, .gainesville-logo .work-content {
+	margin-left: 4%;
+}
+
 .blue {
 	text-transform: uppercase;
 }
 
 .my-work h3 {
 	padding-bottom: 5%;
+}
+
+.work-content p {
+	padding-bottom: 6%;
+}
+
+.gainesville-logo {
+    padding-top: 10%;
+}
+
+.gainesville-logo .work-content {
+    padding-bottom: 10%;
 }
 
  .slider {
@@ -293,6 +314,13 @@ Work Page Styling
 	text-align: center;
 }
 
+.img-middle {
+    margin-top: 23%;
+}
+
+.border-radius {
+	border-radius: 10%;
+}
 /************************
 
 Footer Styling
@@ -418,6 +446,23 @@ Media Queries
 /******************** END MIN-WIDTH 700 QUERY ********************/
 
 
+
+/******************** START MIN-WIDTH 900 QUERY ********************/
+@media (min-width: 900px) {
+	.my-work h3 {
+    padding-bottom: 3%;
+	}
+
+	.work-content p {
+    padding-bottom: 4%;
+	}
+}
+
+
+/******************** END MIN-WIDTH 900 QUERY ********************/
+
+
+
 /******************** START MIN-WIDTH 1000 QUERY ********************/
 @media (min-width: 1000px) {
 
@@ -474,6 +519,34 @@ Media Queries
 
 	.button a {
     padding: 20px 40px;
+	}
+
+	.travel-vida, .gainesville-logo {
+    margin: 4%;
+}
+
+
+	.travel-flex-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.travel-vida .work-content {
+		width: 50%;
+		margin-right: 4%;
+	}
+
+	.bx-wrapper {
+		width: 50%;
+	}
+
+	.gainesville-flex-container {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.gainesville-logo .work-content {
+		width: 50%;
 	}
 
 
