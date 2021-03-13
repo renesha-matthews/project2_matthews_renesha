@@ -330,21 +330,20 @@ Work Page Styling
 Contact Page Styling
 
 *************************/
-.contact-me h2 {
-	text-align: center;
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
 }
+
 
 .contact-me h2, .contact-me p {
 	padding-bottom: 5%;
-}
-
-.contact-me p {
-  margin-left: 3%;
+	margin-left: 3%;
 }
 
 .contact-form {
-	border: 14px solid;
-	border-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) 1;
+	background-color: #eceffe;
+	margin-bottom: 10%;
 }
 
 
@@ -353,17 +352,21 @@ label {
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: bold;
 	font-size: 1.5em;
+	margin-bottom: 1%;
 }
 
 input {
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 		padding: 2%;
 }
 
 
 input, textarea {
-	display: block;
 	border: 2px solid #BCC5FB;
+}
+
+label, input, textarea {
+	display: block;
 }
 
 input::placeholder, textarea::placeholder {
@@ -375,7 +378,7 @@ input::selection, textarea::selection {
 	background-color: #E0C3FC;
 }
 
-textarea {
+textarea, textarea::placeholder {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -390,7 +393,7 @@ label, input, textarea {
 }
 
 .submit {
-    padding: 6% 10% 6% 0;
+    padding: 10% 10% 10% 0;
 }
 
 .submit input {
@@ -428,6 +431,10 @@ Media Queries
 		margin: 3%;
 		width: 14%;
 	}
+
+	.submit input {
+	padding: 4% 8% 4% 8%;
+	}
 }
 /******************** END MIN-WIDTH 400 QUERY ********************/
 
@@ -453,6 +460,25 @@ Media Queries
 }
 /******************** END MIN-WIDTH 590 QUERY ********************/
 
+
+/******************** START MIN-WIDTH 600 QUERY ********************/
+@media (min-width: 600px) {
+	input {
+		padding: 1%;
+	}
+}
+
+/******************** END MIN-WIDTH 600 QUERY ********************/
+
+
+/******************** START MIN-WIDTH 630 QUERY ********************/
+@media (min-width: 630px) {
+	.submit input {
+		padding: 20px 40px;
+	}
+}
+
+/******************** END MIN-WIDTH 630 QUERY ********************/
 
 
 /******************** START MIN-WIDTH 700 QUERY ********************/
@@ -512,7 +538,8 @@ Media Queries
 		transition: .3s;
 	}
 
-	.button a {
+
+	.button a  {
 		padding: 2%;
 	}
 
@@ -525,6 +552,10 @@ Media Queries
 		transition: .4s;
 	}
 
+	.contact-me h2, .contact-me p {
+    margin-left: 2%;
+	}
+
 
 	footer {
 		padding: 2%;
@@ -532,6 +563,18 @@ Media Queries
 
 }
 /******************** END MIN-WIDTH 700 QUERY ********************/
+
+
+
+/******************** START MIN-WIDTH 800 QUERY ********************/
+@media (min-width: 800px) {
+	.contact-me p {
+    margin-top: -2%;
+	}
+}
+
+
+/******************** END MIN-WIDTH 800 QUERY ********************/
 
 
 
@@ -663,7 +706,7 @@ Media Queries
 		font-size: 3em;
 	}
 
-	h3 {
+	h3, label {
 		font-size: 2em;
 	}
 
