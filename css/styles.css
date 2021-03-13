@@ -28,6 +28,7 @@ html {
 	box-sizing: border-box;
 }
 
+
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
@@ -55,6 +56,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #545677;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: bold;
+}
+
+p::selection {
+	color: #ffffff;
+	background-color: #E0C3FC;
 }
 
 
@@ -274,10 +280,6 @@ Work Page Styling
 	padding-bottom: 14%;
 }
 
-.travel-vida, .gainesville-logo {
-	background-image: linear-gradient(180deg, #ffffff, #ffffff #ebedee);
-}
-
 .travel-vida .work-content, .gainesville-logo .work-content {
 	margin-left: 4%;
 }
@@ -321,6 +323,87 @@ Work Page Styling
 .border-radius {
 	border-radius: 10%;
 }
+
+
+/************************
+
+Contact Page Styling
+
+*************************/
+.contact-me h2 {
+	text-align: center;
+}
+
+.contact-me h2, .contact-me p {
+	padding-bottom: 5%;
+}
+
+.contact-me p {
+  margin-left: 3%;
+}
+
+.contact-form {
+	border: 14px solid;
+	border-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) 1;
+}
+
+
+label {
+	color: #43445A;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+input {
+    margin-bottom: 4%;
+		padding: 2%;
+}
+
+
+input, textarea {
+	display: block;
+	border: 2px solid #BCC5FB;
+}
+
+input::placeholder, textarea::placeholder {
+	color: #545677;
+}
+
+input::selection, textarea::selection {
+	color: #ffffff;
+	background-color: #E0C3FC;
+}
+
+textarea {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+label, input, textarea {
+    position: relative;
+    left: 4%;
+}
+
+.first-name {
+    padding-top: 6%;
+}
+
+.submit {
+    padding: 6% 10% 6% 0;
+}
+
+.submit input {
+    background-color: #545677;
+    border: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 6% 12% 6% 12%;
+		cursor: pointer;
+}
+
 /************************
 
 Footer Styling
@@ -404,13 +487,14 @@ Media Queries
 	.desktop-menu ul li {
     display: inline-block;
 		list-style-type: none;
-		padding: 12px;
+		padding: 18px;
 	}
 
 	.desktop-menu ul li a {
-    text-decoration: none;
-    color: #545677;
+		color: #545677;
+		text-decoration: none;
     text-transform: uppercase;
+		font-weight: bold;
 		transition:.3s;
 	}
 
@@ -430,13 +514,17 @@ Media Queries
 
 	.button a {
 		padding: 2%;
+	}
+
+	.button a, .submit input {
 		transition: .4s;
 	}
 
-	.button a:hover {
+	.button a:hover, .submit input:hover {
 		background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 		transition: .4s;
 	}
+
 
 	footer {
 		padding: 2%;
@@ -523,6 +611,7 @@ Media Queries
 
 	.travel-vida, .gainesville-logo {
     margin: 4%;
+		padding: 3%;
 }
 
 
@@ -534,6 +623,10 @@ Media Queries
 	.travel-vida .work-content {
 		width: 50%;
 		margin-right: 4%;
+	}
+
+	.work-content {
+		margin-top: 2%;
 	}
 
 	.bx-wrapper {
@@ -568,6 +661,14 @@ Media Queries
 
 	h2 {
 		font-size: 3em;
+	}
+
+	h3 {
+		font-size: 2em;
+	}
+
+	.my-work p, .blue {
+		font-size: 1.25em;
 	}
 }
 /******************** END MIN-WIDTH 1300 QUERY ********************/
