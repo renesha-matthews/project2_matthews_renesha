@@ -759,3 +759,13 @@ Media Queries
 	}
 }
 /******************** END MIN-WIDTH 1300 QUERY ********************/
+
+
+/******************** START MIN-WIDTH 1920 QUERY ********************/
+@media (min-width: 1920px) {
+	.gainesville-logo figure img {
+		margin: 0 auto;
+	}
+}
+
+/******************** END MIN-WIDTH 1920 QUERY ********************/
