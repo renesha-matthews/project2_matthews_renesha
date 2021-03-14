@@ -109,6 +109,12 @@ Hamburger Menu Styling
 .menu a{text-decoration:none; color:#666;}
 .menu a:hover{text-decoration:none; color:#666;}
 
+
+/************************
+
+Back To Top Styling
+
+*************************/
 #myBtn {
   display: none;
   position: fixed;
