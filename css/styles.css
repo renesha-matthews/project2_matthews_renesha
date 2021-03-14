@@ -109,10 +109,6 @@ Hamburger Menu Styling
 .menu a{text-decoration:none; color:#666;}
 .menu a:hover{text-decoration:none; color:#545677;}
 
-#myBtn {
-	display: none;
-}
-
 /************************
 
 Home Page Styling
@@ -300,7 +296,10 @@ Work Page Styling
 
 .work-content p {
 	padding-bottom: 6%;
-	margin: 1%;
+}
+
+.work-content p, em {
+	margin-right: 1%;
 }
 
 .gainesville-logo {
@@ -542,32 +541,31 @@ Media Queries
 		transition: .3s;
 	}
 
-	/***** Back To Top Styling *****/
+	/************************
+
+	Back to Top Styling
+
+	*************************/
 	#myBtn {
-	  display: none;
-	  position: fixed;
-	  bottom: 20px;
-	  right: 30px;
-	  z-index: 99;
-	  border: none;
-	  outline: none;
-	  background-color: #BCC5FB;
-	  color: #ffffff;
-	  cursor: pointer;
-	  padding: 15px;
-	  border-radius: 10px;
-	  font-size: 18px;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		border: none;
+		outline: none;
+		background-color: #BCC5FB;
+		color: #ffffff;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 10px;
+		font-size: 18px;
 		transition: .4s;
 	}
 
 	#myBtn:hover {
-	  background-color: #c9cde6;
+		background-color: #c9cde6;
 		color: #011C27;
 		transition: .4s;
-	}
-
-	.work-content p {
-		margin: 0;
 	}
 
 
@@ -773,3 +771,13 @@ Media Queries
 }
 
 /******************** END MIN-WIDTH 1920 QUERY ********************/
+
+
+
+/******************** START MAX-WIDTH 699 QUERY ********************/
+@media (max-width: 699px) {
+	#myBtn {
+		display: none !important;
+	}
+}
+/******************** END MAX-WIDTH 699 QUERY ********************/
