@@ -553,7 +553,7 @@ Media Queries
 		z-index: 99;
 		border: none;
 		outline: none;
-		background-color: #BCC5FB;
+		background-color: #43445A;
 		color: #ffffff;
 		cursor: pointer;
 		padding: 15px;
@@ -563,8 +563,7 @@ Media Queries
 	}
 
 	#myBtn:hover {
-		background-color: #c9cde6;
-		color: #011C27;
+		background-color: #545677;
 		transition: .4s;
 	}
 

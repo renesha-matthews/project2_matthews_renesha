@@ -17,6 +17,7 @@ body {
   color: #011C27;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  text-align: center;
 }
 
 h1 {
@@ -230,7 +231,9 @@ footer {
 
 
 <!-- Font Awesome -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/4308417424.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <header class="site-header">
   <div class="wrapper site-header_wrapper">
