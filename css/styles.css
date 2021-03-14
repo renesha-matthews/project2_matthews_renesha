@@ -109,6 +109,29 @@ Hamburger Menu Styling
 .menu a{text-decoration:none; color:#666;}
 .menu a:hover{text-decoration:none; color:#666;}
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #BCC5FB;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+	transition: .4s;
+}
+
+#myBtn:hover {
+  background-color: #c9cde6;
+	color: #011C27;
+	transition: .4s;
+}
+
 
 /************************
 
@@ -263,7 +286,6 @@ About Page Styling
     text-decoration: none;
     color: #ffffff;
     padding: 4%;
-		font-weight: bold;
 		border-radius: 34px;
 }
 
@@ -396,6 +418,12 @@ label, input, textarea {
     padding-top: 6%;
 }
 
+textarea {
+	box-sizing: border-box;
+	max-width: 75%;
+	resize: none;
+}
+
 .submit {
     padding: 10% 10% 10% 0;
 }
@@ -404,7 +432,7 @@ label, input, textarea {
     background-color: #545677;
     border: none;
     color: #ffffff;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin: 0 auto;
     border-radius: 30px;
     padding: 6% 12% 6% 12%;
