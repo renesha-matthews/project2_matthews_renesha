@@ -105,11 +105,13 @@ Hamburger Menu Styling
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#ffffff 1px solid;}
 .menu li:hover{display: block;  background:#ffffff; padding:15px 0 15px 0; border-bottom:#bcc5fb 1px solid;}
 .menu ul li a { text-decoration:none;  margin: 0px; color:#011C27;}
-.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu ul li a:hover {  color: #545677; text-decoration:none;}
 .menu a{text-decoration:none; color:#666;}
-.menu a:hover{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#545677;}
 
-
+#myBtn {
+	display: none;
+}
 
 /************************
 
@@ -298,6 +300,7 @@ Work Page Styling
 
 .work-content p {
 	padding-bottom: 6%;
+	margin: 1%;
 }
 
 .gainesville-logo {
@@ -342,7 +345,7 @@ Contact Page Styling
 
 .contact-me h2, .contact-me p {
 	padding-bottom: 5%;
-	margin-left: 3%;
+	margin: 3%;
 }
 
 .contact-form {
@@ -563,6 +566,10 @@ Media Queries
 		transition: .4s;
 	}
 
+	.work-content p {
+		margin: 0;
+	}
+
 
 	.social-media a {
 		transition: .3s;
@@ -588,7 +595,7 @@ Media Queries
 	}
 
 	.contact-me h2, .contact-me p {
-    margin-left: 2%;
+    margin: 1%;
 	}
 
 
